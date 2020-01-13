@@ -1,0 +1,14 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        float i;  
+  
+        while(scanf("%f", &i)!=EOF){   
+                i *= i;  
+                i = (int)(10.0*i+0.5)/10.0;  
+                printf("%.1f\n", i);  
+        }  
+}  
+ 

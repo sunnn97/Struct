@@ -1,0 +1,26 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        float i, j, k;  
+        float x;  
+  
+        while(scanf("%f %f", &i, &j)!=EOF){  
+                if(i<61){  
+                        x = i*j;  
+                }  
+                else if(i>60 && i<121){  
+                        x = 60*j;  
+                        k = i-60;  
+                        x = x+(j*1.33)*k;  
+                }  
+                else{  
+                        x = 60*j;  
+                        k = i-120;  
+                        x = x+(j*1.33)*60;  
+                        x = x+(j*1.66)*k;  
+                }  
+                printf("%.1f\n",x);  
+        }  
+} 

@@ -1,0 +1,12 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        int i, k;  
+  
+        scanf("%d", &k);  
+            for(i=1; i<k+1; i++){  
+                    printf("%d*%d=%d\n", i, i, i*i);  
+            }  
+}  

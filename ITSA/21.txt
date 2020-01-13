@@ -1,0 +1,15 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        int i, k;  
+        long int x;  
+  
+        while(scanf("%d", &k)!=EOF){  
+                x = 1;  
+                for(i=1; i<k+1; i++)  
+                        x *= i;  
+                printf("%ld\n",x);  
+        }  
+}  

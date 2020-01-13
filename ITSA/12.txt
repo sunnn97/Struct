@@ -1,0 +1,21 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        int i ,k;  
+        int a;  
+        float b;  
+  
+        while(scanf("%d", &k)!=EOF){  
+                b = k;  
+                a = 0;  
+                i = 0;  
+                while(a<b){  
+                        a+=1;  
+                        b+=0.762;  
+                        i++;  
+                }  
+                printf("%d\n",i);  
+        }  
+}  

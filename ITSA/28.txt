@@ -1,0 +1,22 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        int i, k;  
+        int a[10000];  
+        int count;  
+  
+        while(scanf("%ld", &k)!=EOF){  
+                count = 0;  
+                for(i=1; i<k+1; i++){  
+                        if(i%35==0){  
+                                if(k-i<35)  
+                                        printf("%d", i);  
+                                else  
+                                        printf("%d ",i);  
+                        }  
+                }  
+                printf("\n");  
+        }  
+}  

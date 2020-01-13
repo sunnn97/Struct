@@ -1,0 +1,13 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        float i, j;  
+        float count;  
+  
+        while(scanf("%f %f", &i, &j)!=EOF){  
+                count = (i*j)/2;  
+                printf("%.1f\n", count);  
+        }  
+}  

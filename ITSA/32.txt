@@ -1,0 +1,19 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        int i, x, y, z, k;  
+  
+        while(scanf("%d", &k)!=EOF){  
+                x=k/100;  
+                y=k/10%10;  
+                z=k%10;  
+  
+                //  printf("%d %d %d\n", x, y, z);  
+                if(x*x*x+y*y*y+z*z*z==k)  
+                        printf("Yes\n");  
+                else  
+                        printf("No\n");  
+        }  
+}  

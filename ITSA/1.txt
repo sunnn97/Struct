@@ -1,0 +1,13 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        float i, j, k;  
+        float count;  
+  
+        while(scanf("%f %f %f", &i, &j, &k)!=EOF){  
+                count = ((i+j)*k)/2;  
+                printf("Trapezoid area:%.1f\n", count);  
+        }  
+}  

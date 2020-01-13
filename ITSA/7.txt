@@ -1,0 +1,10 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        int k;  
+        while(scanf("%d", &k)!=EOF){  
+                printf("%d %d %d\n", k, k*k, k*k*k);  
+        }  
+}  

@@ -1,0 +1,17 @@
+#include <stdio.h>  
+#include <stdlib.h>  
+int gcd(int x,int y);  
+int main(void)  
+{  
+    int a,b;  
+    scanf("%d %d",&a,&b);  
+    printf("%d\n",gcd(a,b));     
+    return 0;  
+}  
+int gcd(int x,int y)  
+{  
+    if(x!=0&&y!=0)  
+        return gcd((x>=y)?x%y:x,(x<y)?y%x:y);  
+    else  
+        return(x!=0)?x:y;  
+}  

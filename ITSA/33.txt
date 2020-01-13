@@ -1,0 +1,44 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        int k[10], l=0, n[10];  
+        int i=0, j=0, x;  
+        int m=1;  
+        int temp;  
+        char a;  
+        int max=0, min=0;  
+  
+        while(scanf("%d %c", &k[l], &a)!=EOF){  
+                l++;  
+        }  
+        for(i=0; i<l; i++){  
+                for(j=0; j<l; j++){  
+                        if(k[i] > k[j]){  
+                                temp = k[i];  
+                                k[i] = k[j];  
+                                k[j] = temp;  
+                        }  
+                }  
+        }  
+  
+        for(i=l-1,j=0; i>=0,j<l; i--,j++){  
+                n[j] = k[i];  
+        }  
+        for(i=l,j=0; i>0,j<l; i--,j++){  
+                x = i;  
+                m = 1;  
+                while(x>0){  
+                        m*=10;  
+                        x--;  
+                }  
+                k[j]*=m;  
+                n[j]*=m;  
+                max+=k[j];  
+                min+=n[j];  
+        }  
+    //  for(i=0; i<l; i++)  
+    //          printf("%d ",k[i]);  
+        printf("%d\n", (max-min)/10);  
+}  

@@ -1,0 +1,13 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        float a;  
+  
+        while(scanf("%f", &a)!=EOF){  
+                a = ((a*9)/5)+32;  
+            //  a = (int)(1000.0*a)/1000.0;  
+                printf("%.1f\n", a);  
+        }  
+}  

@@ -1,0 +1,21 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+#include    <math.h>  
+  
+int main()  
+{  
+        double i ,j, k, m;  
+        float l;  
+  
+        while(scanf("%lf", &m)!=EOF){  
+                i = m/60/60/24;  
+                j = (i-(int)(i))*24;  
+                k = (j-(int)(j))*60;  
+                l = (k-(int)(k))*60;  
+  
+                printf("%d days\n", (int)i);  
+                printf("%d hours\n", (int)j);  
+                printf("%d minutes\n", (int)k);  
+                printf("%d seconds\n", (int)l);  
+        }  
+}  

@@ -1,0 +1,13 @@
+#include    <stdio.h>  
+#include    <stdlib.h>  
+  
+int main()  
+{  
+        int i, j;  
+        int count;  
+  
+        while(scanf("%d %d", &i, &j)!=EOF){  
+                count = i + j;  
+                printf("%d\n", count);  
+        }  
+}  
